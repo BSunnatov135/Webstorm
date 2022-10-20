@@ -1,0 +1,595 @@
+* {
+    box-sizing: border-box;
+}
+button {
+    cursor:pointer;
+}
+a {
+    text-decoration: none;
+}
+.BannerContainer {
+    background-image: url(https://www.jetbrains.com/webstorm/img/beam-1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 400px) -235px;
+    background-size: 1050px 840px;
+    background-color: #323236;
+    padding-top: 1px;
+    padding-bottom: 96px;
+}
+.BannerWrapper {
+    margin: 96px auto 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    max-width: 1276px;
+    width: 100%;
+}
+.FeaturesWrapper {
+    position: relative;
+    margin: 96px auto 0;
+    max-width: 1276px;
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+
+.BannerTopFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.BannerTopLeft {
+    margin: 0 16px;
+    max-width: calc(50% - 32px);
+}
+.BannerLeftTitleContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.LeftTitleIcon {
+    max-width: 100%;
+    margin: 0 8px;
+    width: 65px;
+    height: 65px;
+}
+.LeftTitleHeading {
+    margin: 0 8px; 
+}
+.LeftTitleHeading>h1 {
+    color: #fff;
+    letter-spacing: -.005em;
+    font-family:"JetBrains Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+    font-size:72px;
+    font-weight:530px;
+    margin: 0;
+}
+.LeftSubtitle {
+    margin: 0;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 39px;
+    font-weight: 320;
+    line-height: 49px;
+}
+.LeftParagraph {
+    color: #fff;
+    width: 90%;
+    margin: 24px 0 0;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.BannerButtons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -16px;
+    height: auto;
+}
+.DownloadButton {
+    margin: 48px 16px 0;
+    text-align:center;
+    box-sizing: border-box;
+}
+.DownloadButtonLink {
+    color: #27282c;
+    background-color: #fff;
+    border-radius: 24px;
+    border-width: 0;
+    padding: 12px 32px;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 24px;
+}
+.DownloadText {
+    margin: 0;
+    margin-top: 12px;
+    color: hsla(0,0%,100%,.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.TourButtonLink {
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: hsla(0,0%,100%,.3);
+    padding: 11px 31px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    text-decoration: none;
+    background:transparent;
+}
+.BannerTopLeft>img {
+    max-width: 100%;
+}
+.Heading {
+    margin: 96px 0 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 530;
+    line-height: 42px;
+}
+.BannerFlexContainer {
+    display: flex;
+    margin: 0 -16px;    
+}
+.BannerFlexItem {
+    margin: 48px 16px 0;
+    width: calc(100% / 3 - 32px);
+}
+.BannerFlexItem>img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.BannerFlexItem>h3 {
+    margin: 24px 0 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 530;
+    line-height: 28px;
+}
+.BannerFlexItem>p {
+    margin: 12px 0 0;
+    color: hsla(0,0%,100%,.7);
+    letter-spacing: .0015em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.FeaturesContainer {
+    box-sizing: border-box;
+    padding-top: 1px;
+    padding-bottom: 96px;
+    background-color: #fff;
+}
+
+.FeaturesTitle {
+    margin: 0;
+    margin-top: 96px;
+    color: #19191c;
+    font-size: 35px;
+    font-weight: 530;
+    line-height: 42px;
+}
+.FeaturesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.FeaturesFlexItem {
+    margin: 48px 16px 0;
+    max-width: calc(100% / 3 - 32px);
+}
+.FeaturesFlexItem>img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.FeaturesFlexItem>h3 {
+    margin: 24px 0 0;
+    color: #19191c;
+    font-size: 20px;
+    font-weight: 530;
+    line-height: 28px;
+}
+.FeaturesFlexItem>p {
+    margin: 12px 0 0;
+    color: rgba(25, 25, 28, .7);
+    letter-spacing: .0015em;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.FeaturesButtonContainer {
+    margin: 48px 0 0;
+}
+.FeaturesButtonContainer>a {
+    padding: 11px 31px;
+    border: 1px solid rgba(39, 40, 44, .4);
+    border-radius: 24px;
+    text-decoration: none;
+    color: #27282c;
+}
+.NewContainer {
+    background-color: #f4f4f4;
+    padding-top: 1px;
+    padding-bottom: 96px;
+}
+.NewWrapper {
+    margin: 96px auto 0;
+    max-width: 1276px;
+    padding-left: 22px;
+    padding-right: 22px;
+    position: relative;
+}
+.NewWrapper>h2 {
+    margin: 96px 0 0;
+    font-size: 35px;
+    font-weight: 530;
+    line-height: 42px;
+
+}
+.NewMargin>h3 {
+    margin: 0;
+}
+.CustomerContainer {
+    padding-top: 1px;
+    background-color: #fff;
+    padding-bottom: 96px;
+}
+.CustomerWrapper {
+    margin: 48px auto 0;
+    width: 100%;
+    max-width: 1276px;
+    padding: 0 22px;
+}
+.CustomerFlex {
+    margin: 48px -16px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.CustomerLeftContainer {
+    margin: 48px 16px 0;
+    max-width: calc(40% - 32px);
+}
+.CustomerLeftContainer>h2{
+    color: #19191c;
+    font-size: 35px;
+    font-weight: 530;
+    line-height: 42px;
+    margin: 0;
+}
+.CustomerLeftContainer>p {
+    margin: 0;
+    margin-top: 24px;
+    color: #19191c;
+    font-size: 29px;
+    font-weight: 320;
+    line-height: 39px;
+}
+.CustomerButtonContainer {
+    margin: 0;
+    margin-top: 24px;
+
+}
+.CustomerButton {
+    display: inline-block;
+    text-align: center;
+}
+.CustomerButtonFlex {
+    display: flex;
+    margin: 0;
+    border: 0;
+
+}
+.CustomerButtonFlex>a {
+    margin: 0 1px 0 0;
+    color: #fff;
+    background: #167dff;
+    padding: 12px 32px;
+    border-width: 0;
+    border-radius: 24px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.CustomerButtonFlex>button {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12px 16px;
+    border-width: 0;
+    margin: 0;
+    color: #fff;
+    background: #167dff;
+    border-radius: 24px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    align-items: center;
+    justify-content: center;
+}
+.CustomerButtonFlex>button>svg {
+    margin: 0 0 0 16px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    fill: currentcolor;
+}
+.CustomeLeftTrial {
+    margin: 0;
+    margin-top: 12px;
+    letter-spacing: 0.0015em;
+    color: rgba(25, 25, 28, .7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.CustomerRightContainer {
+    margin-right: 16px;
+    margin-left: calc(8.33333% + 16px);
+    max-width: calc(8.33333% * 6 - 16px * 2);
+    width: 100%;
+}
+.CustomerRightFlex {
+    display: flex;
+    margin: 0 -16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.CustomerRightFlexItem {
+    margin-top: 48px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0;
+    flex-basis: calc(8.33333% * 4 - 16PX * 2);
+    text-align: center;
+}
+.CustomerSVG_1 {
+    width: 122px;
+    height: 20px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_2 {
+    width: 135px;
+    height: 21px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_3 {
+    width: 97px;
+    height: 68px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_4 {
+    width: 82px;
+    height: 47px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_5 {
+    width: 121px;
+    height: 34px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_6 {
+    width: 109px;
+    height: 30px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_7 {
+    width: 110px;
+    height: 26px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_8 {
+    width: 97px;
+    height: 25px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.CustomerSVG_9 {
+    width: 51px;
+    height: 51px;
+    max-width: 100%;
+    max-height: 97px;
+    overflow: hidden;
+}
+.JetBrainsBanner {
+    background: linear-gradient(90deg,#3ceb91,#00b8b0 50%,#9416ff);
+}
+.JetBrainsBannerContent {
+    display: block;
+    padding: 34px 24px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: normal;
+    font-size: 20px;
+    font-weight: 530;
+    line-height: 28px;
+}
+.CarouselContainer {
+    margin: 0;
+    margin-top: 48px;
+}
+.CarouselItem {
+    margin: 0 16px;
+    flex-basis: calc(8.33333% * 4 - 16px * 2);
+}    
+.CustomerInfo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.CustomerImg {
+    width: 72px;
+    height: 72px;
+    margin-right: 32px;
+    flex-shrink: 0;
+    flex-basis: 72px;
+}
+.CustomerImg>img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.CustomerName {
+    letter-spacing: normal;
+    color: #19191c;
+    font-size: 20px;
+    font-weight: 530;
+    line-height: 28px;
+    margin: 0;
+}
+.CustomerTwitter {
+    margin: 0;
+}
+.CustomerTwitter>a {
+    padding-right: 14px;
+    background-position: 100% calc(100% - 1px);
+    background-size: 14px 14px;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23167DFF'%3E%3Cpath d='M14 2H5.75l3.595 3.595L2.22 12.72l1.06 1.06 7.125-7.125L14 10.25V2z'/%3E%3C/svg%3E);
+    background-repeat: no-repeat;
+    color: #167dff;
+}
+.CustomerText {
+    margin: 0;
+    margin-top: 24px;
+    color: rgba(25, 25, 28, .7);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+}
+@media screen and (max-width: 1276px) {
+    .BannerWrapper{
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 996px;
+    }
+    .FeaturesWrapper {
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 996px;
+    }
+    .NewWrapper {
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 996px;
+    }
+    .CustomerWrapper {
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 996px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .BannerTopLeft {
+        max-width: calc(8.33333% * 8 - 16px  * 2);
+    }
+    .BannerContainer {
+        background-position: calc(50% + 550px) -235px;
+    }
+    .DisplayBanner {
+        display: none;
+    }
+    .FeaturesFlexItem {
+        max-width: calc(100% / 2 - 32px);;
+    }
+    .NewWrapper>.FeaturesFlex>.FeaturesFlexItem {
+        max-width:  calc(100% / 3 - 32px);
+    }
+}
+@media screen and (max-width: 640px) {
+    .BannerTopLeft {
+        max-width: 100%;
+        margin: 0 8px;
+    }
+    .BannerWrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
+    }
+    .LeftParagraph {
+        width: 100%;
+    }
+    .BannerFlexContainer {
+        flex-wrap: wrap;
+    }
+    .BannerFlexItem {
+        max-width: 100%;
+        width: 100%;
+    }
+    .LeftTitleHeading>h1 {
+        font-size: 42px;
+    }
+    .LeftSubtitle {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .FeaturesWrapper {
+        margin-top: 64px;
+    }
+    .FeaturesTitle {
+        margin-top: 64px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .FeaturesFlexItem {
+        margin-top: 24px;
+        max-width: 100%;
+    }
+    .NewWrapper>.FeaturesFlex>.FeaturesFlexItem {
+        max-width: 100%;
+    }
+    .CustomerWrapper {
+        padding: 0 16px;
+        max-width: 100%;
+    }
+    .CustomerRightFlex {
+        margin: 0 -8px;
+    }
+    .CustomerLeftContainer {
+        max-width: 100%;
+    }
+    .CustomerRightContainer {
+        margin: 0;
+        max-width: 100%;
+    }
+    .CustomerRightFlexItem {
+        width: calc(50% - 32px);
+        flex-basis: calc(50% - 32px);
+        text-align: left;
+    }
+    .CarouselItem {
+        max-width: 100%;
+        flex-basis: auto;
+    }
+    .CarouselContainer>.BannerFlexContainer>:nth-child(2) {
+        display: none;
+    }
+    .CarouselContainer>.BannerFlexContainer>:nth-child(3) {
+        display: none;
+    }
+}

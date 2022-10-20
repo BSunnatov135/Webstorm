@@ -1,0 +1,128 @@
+header {
+    background: #27282c;
+    height: 72px;
+}
+.NavigationTopContainer {
+    max-width: 1276px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 22px;
+    box-sizing: border-box;
+}
+.NavButton {
+    font-family: "JetBrains Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: .6;
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 0 12px;
+}
+@media screen and (max-width: 1276px) {
+    .NavigationTopContainer {
+        padding-left: 22px;
+        padding-right: 22px;
+        max-width: 996px;
+    }
+    .NavButton {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.NavbarContainer {
+    display:  flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.NavbarLogo {
+    height: 72px;
+    width: 72px;
+    padding: 0;
+    margin: 0;
+}
+.NavbarLogo>svg {
+    width: 100%;
+    height: 100%;
+}
+.NavigationWrapper {
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 0;
+}
+.NavigationFlex {
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.NavItemsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.NavItem {
+    margin: 0;
+    padding: 0;
+}
+
+.NavIcons {
+    margin: 0;
+    margin-left: 6px;
+}
+.NavIconsFlex {
+    display: flex;
+    margin: 0 -5px;
+}
+.IconItem {
+    margin: 0 5px;
+}
+.IconItem>button {
+    background:transparent;
+    color: #fff;
+    padding: 6px;
+    border: none;
+}
+.IconItem>button>svg {
+    width: 24px;
+    height: 24px;
+    color: hsla(0,0%,100%,0.6);
+    fill: currentColor;
+}
+.RightContent {
+    display: flex;
+    max-width: 100%;
+}
+.DisplayNone {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .NavItemsContainer {
+        display: none;
+    }
+    .NavIcons {
+        display: none;
+    }
+    .DisplayNone {
+        display: inherit;
+    }
+    .NavItem {
+        display: none;
+    }
+    header {
+        height: 48px;
+    }
+    .NavbarContainer {
+        height: 48px;
+    }
+    .NavbarLogo {
+        height: 48px;
+        width: 48px;
+    }
+}
